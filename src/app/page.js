@@ -337,10 +337,10 @@ export default function Home() {
           <div className="gold-divider-line"></div>
         </div>
 
-        <h3 style={{ fontSize: "1.8rem", color: "var(--gold-dark)", fontWeight: "bold", marginBottom: "12px", letterSpacing: "0.05em" }}>
+        <h3 className="bismillah-text">
           بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
         </h3>
-        <h2 className="gold-text-shine" style={{ fontSize: "2.5rem", margin: "15px 0" }}>
+        <h2 className="gold-text-shine title-wedding-invitation">
           دعوة لحضور عقد قران
         </h2>
 
@@ -363,14 +363,14 @@ export default function Home() {
         </div>
 
         {/* Names of Bride & Groom */}
-        <h1 className="gold-text-shine" style={{ fontSize: "3.2rem", margin: "15px 0", fontFamily: "var(--font-amiri)" }}>
+        <h1 className="gold-text-shine names-wedding">
           مصطفى الخطيب & سالي السيد
         </h1>
 
-        <p style={{ fontSize: "1.15rem", lineHeight: "1.8", color: "var(--text-muted)", maxWidth: "600px", margin: "0 auto" }}>
+        <p className="desc-wedding">
           يسعدنا ويشرفنا دعوتكم لحضور حفل كتب كتابنا ومشاركتنا فرحة العمر وسماع قول المأذون
           <br />
-          <strong style={{ color: "var(--gold-primary)", fontSize: "1.25rem" }}>
+          <strong className="verse-strong">
             "بارك الله لكما وبارك عليكما وجمع بينكما في خير"
           </strong>
         </p>

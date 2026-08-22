@@ -1192,3 +1192,102 @@ h1, h2, h3, h4, h5, h6 {
     height: 200px;
   }
 }
+
+/* Responsive typography to prevent text wrapping on mobile */
+.bismillah-text {
+  font-size: 1.8rem;
+  color: var(--gold-dark);
+  font-weight: bold;
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+  font-family: var(--font-amiri);
+  text-align: center;
+}
+
+.title-wedding-invitation {
+  font-size: 2.5rem;
+  margin: 15px 0;
+  white-space: nowrap; /* Prevent wrapping to next line */
+  text-align: center;
+}
+
+.names-wedding {
+  font-size: 3.2rem;
+  margin: 15px 0;
+  font-family: var(--font-amiri);
+  white-space: nowrap; /* Prevent wrapping to next line */
+  text-align: center;
+}
+
+.desc-wedding {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.verse-strong {
+  color: var(--gold-primary);
+  font-size: 1.25rem;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .bismillah-text {
+    font-size: 1.45rem;
+  }
+  
+  .title-wedding-invitation {
+    font-size: 1.85rem;
+    margin: 10px 0;
+  }
+  
+  .names-wedding {
+    font-size: 2.1rem;
+    margin: 10px 0;
+  }
+  
+  .desc-wedding {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  
+  .verse-strong {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bismillah-text {
+    font-size: 1.3rem;
+  }
+  
+  .title-wedding-invitation {
+    font-size: 1.55rem;
+  }
+  
+  .names-wedding {
+    font-size: 1.65rem;
+  }
+  
+  .desc-wedding {
+    font-size: 0.92rem;
+  }
+  
+  .verse-strong {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .title-wedding-invitation {
+    font-size: 1.35rem;
+  }
+  
+  .names-wedding {
+    font-size: 1.45rem;
+  }
+}
