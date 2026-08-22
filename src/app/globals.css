@@ -1246,7 +1246,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .names-wedding {
-    font-size: 2.1rem;
+    font-size: 1.85rem;
     margin: 10px 0;
   }
   
@@ -1261,6 +1261,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 480px) {
+  .card-wedding {
+    padding: 30px 18px; /* Less horizontal padding to gain text width */
+  }
+
   .bismillah-text {
     font-size: 1.3rem;
   }
@@ -1270,7 +1274,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .names-wedding {
-    font-size: 1.65rem;
+    font-size: 1.35rem; /* Safely fits inside mobile screen */
   }
   
   .desc-wedding {
@@ -1283,11 +1287,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 360px) {
+  .card-wedding {
+    padding: 25px 12px; /* Extra horizontal room for very small viewports */
+  }
+
   .title-wedding-invitation {
     font-size: 1.35rem;
   }
   
   .names-wedding {
-    font-size: 1.45rem;
+    font-size: 1.15rem; /* Guaranteed to fit */
   }
 }
