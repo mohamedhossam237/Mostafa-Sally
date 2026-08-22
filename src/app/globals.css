@@ -1270,7 +1270,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .title-wedding-invitation {
-    font-size: 1.55rem;
+    font-size: 1.4rem; /* De-scaled slightly to fit longer text on mobile */
   }
   
   .names-wedding {
@@ -1292,7 +1292,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .title-wedding-invitation {
-    font-size: 1.35rem;
+    font-size: 1.2rem; /* Guaranteed to fit */
   }
   
   .names-wedding {

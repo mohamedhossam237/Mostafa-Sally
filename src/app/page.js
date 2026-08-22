@@ -219,7 +219,7 @@ export default function Home() {
               <div className="envelope-flap flap-bottom"></div>
               
               <div className="envelope-card">
-                <h4>عقد قران</h4>
+                <h4>كتب كتاب (عقد قران)</h4>
                 <h3>سالي & مصطفى</h3>
                 <p>٢ سبتمبر ٢٠٢٦</p>
               </div>
@@ -229,7 +229,7 @@ export default function Home() {
           </div>
           
           <div className="envelope-prompt">
-            <h2>دعوة عقد قران</h2>
+            <h2>دعوة كتبت كتاب (عقد قران)</h2>
             <p>مصطفى الخطيب & سالي السيد</p>
             <button className="open-btn" onClick={handleEnvelopeOpen}>
               اضغط لفتح الدعوة ✉️
@@ -269,7 +269,7 @@ export default function Home() {
         {/* Subtle Watermark Drawings in the background */}
         <div className="bg-watermark watermark-names" style={{ color: "#d9a941", opacity: 0.14 }}>مصطفى & سالي</div>
         <div className="bg-watermark watermark-date" style={{ color: "#d9a941", opacity: 0.12 }}>٢ سبتمبر ٢٠٢٦</div>
-        <div className="bg-watermark" style={{ top: "35%", right: "4%", fontSize: "5.5rem", transform: "rotate(-8deg)", opacity: 0.08, color: "#d9a941", fontStyle: "italic" }}>عقد قران</div>
+        <div className="bg-watermark" style={{ top: "35%", right: "4%", fontSize: "5.5rem", transform: "rotate(-8deg)", opacity: 0.08, color: "#d9a941", fontStyle: "italic" }}>كتبت كتاب</div>
         <div className="bg-watermark" style={{ bottom: "35%", left: "5%", fontSize: "6rem", transform: "rotate(12deg)", opacity: 0.08, color: "#d9a941" }}>سالي & مصطفى</div>
         <div className="bg-watermark" style={{ top: "65%", left: "3%", fontSize: "4.5rem", transform: "rotate(-15deg)", opacity: 0.07, color: "#d9a941" }}>فرحة العمر</div>
         <div className="bg-watermark" style={{ bottom: "20%", right: "9%", fontSize: "5rem", transform: "rotate(5deg)", opacity: 0.07, color: "#d9a941" }}>عقد قران</div>
@@ -341,7 +341,7 @@ export default function Home() {
           بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
         </h3>
         <h2 className="gold-text-shine title-wedding-invitation">
-          دعوة لحضور عقد قران
+          دعوة لحضور عقد قران (كتب كتاب)
         </h2>
 
         {/* Couple Frame Photo */}
@@ -605,6 +605,9 @@ export default function Home() {
         <p>عقبال عندكم جميعاً، ودامت دياركم بالمسرات عامرة 🤍</p>
         <p style={{ fontSize: "1rem", marginTop: "10px", color: "var(--gold-primary)", fontFamily: "var(--font-cairo)" }}>
           مصطفى الخطيب & سالي السيد | عقد القران ٢ سبتمبر ٢٠٢٦
+        </p>
+        <p style={{ fontSize: "0.85rem", marginTop: "15px", opacity: 0.8, color: "var(--text-muted)", letterSpacing: "0.05em" }}>
+          Gifted by Ayda Sameh
         </p>
       </footer>
         </div>
