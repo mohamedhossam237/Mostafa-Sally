@@ -1,8 +1,8 @@
-import clientPromise from "@/lib/mongodb";
+import client from "@/lib/mongodb";
 
 export async function POST(request) {
   try {
-    const client = await clientPromise;
+    await client.connect();
     const db = client.db("sally_mostafa_wedding");
     const { name, attending, note } = await request.json();
 

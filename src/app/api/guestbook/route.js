@@ -1,4 +1,4 @@
-import clientPromise from "@/lib/mongodb";
+import client from "@/lib/mongodb";
 
 // Default pre-seeded fallback congratulations messages
 const defaultMessages = [
@@ -27,7 +27,7 @@ const defaultMessages = [
 
 export async function GET() {
   try {
-    const client = await clientPromise;
+    await client.connect();
     const db = client.db("sally_mostafa_wedding");
     
     const messages = await db
@@ -57,7 +57,7 @@ export async function GET() {
 
 export async function POST(request) {
   try {
-    const client = await clientPromise;
+    await client.connect();
     const db = client.db("sally_mostafa_wedding");
     const { name, note, status } = await request.json();
 
