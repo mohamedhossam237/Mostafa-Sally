@@ -1,29 +1,5 @@
 import client from "@/lib/mongodb";
 
-// Default pre-seeded fallback congratulations messages
-const defaultMessages = [
-  {
-    _id: "default_1",
-    name: "أحمد ومحمد الخطيب",
-    note: "ألف مليون مبروك يا مصطفى ويا سالي، ربنا يتمم لكم على خير ويرزقكم السعادة وراحة البال! فرحتنا بيكم لا توصف.",
-    date: "2026-08-22",
-    status: "سأحضر بالتأكيد",
-  },
-  {
-    _id: "default_2",
-    name: "العائلة الكريمة",
-    note: "بارك الله لكما وبارك عليكما وجمع بينكما في خير. ننتظر هذا اليوم السعيد بكل حب وشوق.",
-    date: "2026-08-21",
-    status: "سأحضر بالتأكيد",
-  },
-  {
-    _id: "default_3",
-    name: "منى السيد",
-    note: "أجمل وأرق عروسة سالي، ربنا يسعد قلبك الطيب ويكتب لكِ الخير والبركة في حياتك القادمة مع مصطفى.",
-    date: "2026-08-20",
-    status: "سأحضر بالتأكيد",
-  },
-];
 
 export async function GET() {
   try {
@@ -36,9 +12,9 @@ export async function GET() {
       .sort({ timestamp: -1 })
       .toArray();
 
-    // If database is empty, return pre-seeded defaults
+    // If database is empty, return empty array
     if (messages.length === 0) {
-      return Response.json(defaultMessages);
+      return Response.json([]);
     }
     
     // Convert Mongo ObjectId to string for safety
@@ -50,8 +26,8 @@ export async function GET() {
 
     return Response.json(formatted);
   } catch (error) {
-    console.error("Database fetch failed, using fallback messages:", error.message);
-    return Response.json(defaultMessages);
+    console.error("Database fetch failed:", error.message);
+    return Response.json([]);
   }
 }
 
