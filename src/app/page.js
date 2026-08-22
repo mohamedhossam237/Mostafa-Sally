@@ -238,28 +238,27 @@ export default function Home() {
         </div>
       )}
 
+      {/* Hidden audio element - ALWAYS rendered in DOM so it can autoplay or play on envelope click */}
+      <audio
+        ref={audioRef}
+        src="/sound.mp3"
+        loop
+      />
+
       {/* Floating Music player toggle button (Moved outside transform container) */}
       {showInvitation && (
-        <>
-          <button
-            onClick={toggleMusic}
-            className={`music-toggle-btn ${isPlaying ? "playing" : ""}`}
-            aria-label="تشغيل / إيقاف الموسيقى"
-          >
-            <div className="sound-visualizer">
-              <div className="visualizer-bar"></div>
-              <div className="visualizer-bar"></div>
-              <div className="visualizer-bar"></div>
-              <div className="visualizer-bar"></div>
-            </div>
-          </button>
-          {/* Hidden audio element */}
-          <audio
-            ref={audioRef}
-            src="/sound.mp3"
-            loop
-          />
-        </>
+        <button
+          onClick={toggleMusic}
+          className={`music-toggle-btn ${isPlaying ? "playing" : ""}`}
+          aria-label="تشغيل / إيقاف الموسيقى"
+        >
+          <div className="sound-visualizer">
+            <div className="visualizer-bar"></div>
+            <div className="visualizer-bar"></div>
+            <div className="visualizer-bar"></div>
+            <div className="visualizer-bar"></div>
+          </div>
+        </button>
       )}
 
       {/* Main Invitation Layout */}
